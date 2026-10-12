@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta name="description" content="Portfolio de Josias Kamga, étudiant et futur expert en cybersécurité et réseau. Découvrez mes projets, simulations et certificats.">
-    <meta name="keywords" content="Josias Foguieng, Josias Kamga, Foguieng Kamga Josias, Josias Foguieng Kamga, Cybersécurité, Réseau, Portfolio, Portfolio cybersecurite, Cybersecurity, Cybersecurity Portfolio, Sécurité Informatique">
+    <meta name="description" content="Portfolio de Josias Kamga, Consultant IT Freelance (Support NOC, Automatisation No-Code, Traduction Technique, Entraînement IA) et étudiant en cybersécurité.">
+    <meta name="keywords" content="Josias Kamga, Freelance IT, Support Réseau, NOC, No-Code, Airtable, Traduction IT, Cybersécurité, Entraînement IA, Data Annotation">
     <meta name="author" content="Josias Kamga">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josias Kamga | Cybersecurity Analyst</title>
+    <title>Josias Kamga | Freelance IT & Cybersecurity Student</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
         .section-title {
             font-size: 2.5rem;
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
             position: relative;
             display: block;
             width: 100%;
@@ -58,6 +58,14 @@
             background: var(--accent-red);
             margin: 10px auto 0;
             border-radius: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            display: block;
+            margin-bottom: 3rem;
+            color: var(--text-main);
+            font-size: 1rem;
         }
 
         .btn {
@@ -90,16 +98,15 @@
             box-shadow: 0 0 15px rgba(255, 62, 62, 0.4);
         }
 
-        /* Bouton CV */
         .btn-cv {
-            background: var(--accent-blue);
-            color: var(--bg-dark);
-            border-color: var(--accent-blue);
+            background: var(--bg-card);
+            color: var(--text-white);
+            border-color: var(--bg-card);
         }
         .btn-cv:hover {
             background: transparent;
             color: var(--accent-blue);
-            box-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
+            border-color: var(--accent-blue);
         }
 
         /* --- NAV --- */
@@ -139,7 +146,6 @@
         .logo-fk { color: var(--accent-blue); }
         .logo-josias { color: var(--accent-red); }
 
-        /* Liens centrés (À Propos, Projets, Certificats) */
         .nav-center {
             position: absolute;
             left: 50%;
@@ -149,16 +155,14 @@
             gap: 2rem;
         }
 
-        .nav-center a,
-        .nav-right a {
+        .nav-center a {
             color: var(--text-main);
             font-size: 0.9rem;
             font-weight: 400;
             position: relative;
         }
 
-        .nav-center a::after,
-        .nav-right a::after {
+        .nav-center a::after {
             content: '';
             position: absolute;
             bottom: -4px; left: 0;
@@ -167,19 +171,39 @@
             transition: width 0.3s;
         }
 
-        .nav-center a:hover,
-        .nav-right a:hover { color: var(--text-white); }
-        .nav-center a:hover::after,
-        .nav-right a:hover::after { width: 100%; }
+        .nav-center a:hover { color: var(--text-white); }
+        .nav-center a:hover::after { width: 100%; }
 
-        /* Partie droite : Contact + Langue */
         .nav-right {
             display: flex;
             align-items: center;
             gap: 1.5rem;
         }
 
-        /* Language Switch Button */
+        .nav-socials {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.1rem;
+        }
+        .nav-socials a { color: var(--text-main); }
+        .nav-socials a:hover { color: var(--accent-blue); }
+
+        .nav-contact {
+            color: var(--text-main);
+            font-size: 0.9rem;
+            position: relative;
+        }
+        .nav-contact::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0;
+            width: 0; height: 2px;
+            background: var(--accent-blue);
+            transition: width 0.3s;
+        }
+        .nav-contact:hover { color: var(--text-white); }
+        .nav-contact:hover::after { width: 100%; }
+
         .lang-btn {
             display: flex;
             align-items: center;
@@ -205,7 +229,7 @@
         .lang-btn i { font-size: 0.75rem; transition: transform 0.3s; }
         .lang-btn:hover i { transform: translateX(3px); }
 
-        /* --- HEADER / HERO --- */
+        /* --- HEADER --- */
         header {
             min-height: 100vh;
             display: flex;
@@ -242,7 +266,7 @@
         }
 
         .hero-text h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             line-height: 1.1;
             margin-bottom: 1rem;
         }
@@ -250,7 +274,7 @@
         .hero-text h1 span { color: var(--accent-blue); }
 
         .hero-text h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: var(--accent-red);
             margin-bottom: 1.5rem;
             font-family: 'Fira Code', monospace;
@@ -260,6 +284,12 @@
             font-size: 1.1rem;
             margin-bottom: 2rem;
             max-width: 500px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .hero-img-wrapper {
@@ -305,7 +335,7 @@
         @keyframes spin { 100% { transform: rotate(360deg); } }
         @keyframes pulse { 0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); } 50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); } }
 
-        /* --- ABOUT & SKILLS --- */
+        /* --- SECTIONS --- */
         section { padding: 100px 0; }
 
         .about-grid {
@@ -338,36 +368,32 @@
         .contact-item a { color: var(--text-main); }
         .contact-item a:hover { color: var(--accent-blue); }
 
-        .skills-container {
-            margin-top: 4rem;
+        /* SERVICES & SKILLS */
+        .grid-auto {
+            margin-top: 2rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
 
-        .skill-box {
+        .card-box {
             background: var(--bg-card);
-            padding: 1.5rem;
+            padding: 2rem;
             border-radius: 8px;
             transition: transform 0.3s, box-shadow 0.3s;
             position: relative;
             overflow: hidden;
+            border-top: 3px solid transparent;
         }
 
-        .skill-box::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 3px;
-            background: var(--gradient);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 0.4s;
-        }
+        .card-box:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+        .card-box.blue-border { border-top-color: var(--accent-blue); }
+        .card-box.red-border { border-top-color: var(--accent-red); }
+        .card-box.dark-border { border-top-color: var(--accent-blue-dark); }
+        .card-box.purple-border { border-top-color: #9b59b6; }
 
-        .skill-box:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
-        .skill-box:hover::before { transform: scaleX(1); }
-        .skill-box h4 { margin-bottom: 1rem; color: var(--text-white); }
+        .card-box h4 { margin-bottom: 1rem; color: var(--text-white); display: flex; align-items: center; gap: 10px; }
+        .card-box p { font-size: 0.9rem; margin-bottom: 1rem; }
 
         .skill-tags span {
             display: inline-block;
@@ -496,6 +522,14 @@
             border-radius: 4px;
         }
 
+        /* --- CTA SECTION --- */
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, #1f2833 0%, #0b0c10 100%);
+        }
+        .cta-section h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+        .cta-section p { margin-bottom: 2rem; font-size: 1.1rem; }
+
         /* --- MODAL --- */
         .modal-overlay {
             position: fixed;
@@ -575,42 +609,40 @@
             .hero-content { grid-template-columns: 1fr; text-align: center; }
             .hero-text h1 { font-size: 2.2rem; }
             .hero-text p { margin-left: auto; margin-right: auto; }
+            .hero-btns { justify-content: center; }
             .hero-img-wrapper { margin-bottom: 2rem; width: 220px; height: 220px; }
             .about-grid { grid-template-columns: 1fr; }
             .section-title { font-size: 2rem; }
             .nav-center { display: none; }
-            .nav-right a { display: none; }
-            .hero-text .btn { margin: 5px; }
+            .nav-contact { display: none; }
         }
 
-        /* Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--bg-dark); }
         ::-webkit-scrollbar-thumb { background: var(--bg-card); border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: var(--accent-blue-dark); }
     </style>
-    <meta name="google-site-verification" content="0rf_st_WPmryYDAGgbIkOT5UlNUr_EK2vbGZnlIrBl8" />
 </head>
 <body>
 
     <!-- NAVIGATION -->
     <nav id="mainNav">
         <div class="nav-inner">
-            <!-- Logo : FK en bleu, JOSIAS en rouge -->
             <div class="nav-logo">
                 <span class="logo-fk">FK</span><span class="logo-josias">JOSIAS</span>
             </div>
-
-            <!-- Liens centrés -->
             <div class="nav-center">
                 <a href="#about" data-fr="À Propos" data-en="About">À Propos</a>
-                <a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
+                <a href="#services" data-fr="Services" data-en="Services">Services</a>
+                <a href="#projects" data-fr="Cas d'usage" data-en="Use Cases">Cas d'usage</a>
                 <a href="#certificates" data-fr="Certificats" data-en="Certificates">Certificats</a>
             </div>
-
-            <!-- Partie droite : Contact + Langue -->
             <div class="nav-right">
-                <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+                <div class="nav-socials">
+                    <a href="https://github.com/Josias-Kamga" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/josiaskamga/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="#contact" class="nav-contact" data-fr="Contact" data-en="Contact">Contact</a>
                 <button class="lang-btn" id="langToggle" aria-label="Switch language">
                     <i class="fa-solid fa-globe"></i>
                     <span id="langLabel">EN</span>
@@ -626,19 +658,18 @@
             <div class="hero-text">
                 <h3 data-fr="Salut, je suis" data-en="Hi, I'm">Salut, je suis</h3>
                 <h1>FOGUIENG KAMGA <span>JOSIAS</span></h1>
-                <h3 class="mono" data-fr="Réseau & Sécurité Informatique" data-en="Network & Cybersecurity">Réseau & Sécurité Informatique</h3>
-                <p data-fr="Étudiant passionné et futur expert en cybersécurité. Je combine connaissances en infrastructure réseau, virtualisation et analyse de risques pour sécuriser les environnements digitaux." data-en="Passionate student and future cybersecurity expert. I combine knowledge in network infrastructure, virtualization, and risk analysis to secure digital environments.">Étudiant passionné et futur expert en cybersécurité. Je combine connaissances en infrastructure réseau, virtualisation et analyse de risques pour sécuriser les environnements digitaux.</p>
-                <a href="#contact" class="btn" data-fr="Me Contacter" data-en="Contact Me">Me Contacter</a>
-                <a href="#projects" class="btn btn-red" style="margin-left: 10px;" data-fr="Mes Projets" data-en="My Projects">Mes Projets</a>
-                <!-- Bouton de téléchargement du CV -->
-                <a href="CV kamga josias.pdf" download class="btn btn-cv" id="cvDownload" style="margin-left: 10px;"
-                   data-fr="&lt;i class='fa-solid fa-file-arrow-down'&gt;&lt;/i&gt; Télécharger mon CV"
-                   data-en="&lt;i class='fa-solid fa-file-arrow-down'&gt;&lt;/i&gt; Download my CV">
-                   <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
-                </a>
+                <h3 class="mono" data-fr="Étudiant en Cybersécurité & Réseau | Prestataire Freelance" data-en="Cybersecurity Student & Network | Freelance Provider">Étudiant en Cybersécurité & Réseau | Prestataire Freelance</h3>
+                <p data-fr="NOC & Support IT | Automatisation No-Code | Traduction Technique & Entraînement d'IA (FR/EN). J'aide les entreprises à réduire le bruit opérationnel et à automatiser leurs flux grâce à la méthodologie C.O.R.E." data-en="NOC & IT Support | No-Code Automation | Technical Translation & AI Training (FR/EN). I help companies reduce operational noise and automate workflows using the C.O.R.E. methodology.">NOC & Support IT | Automatisation No-Code | Traduction Technique & Entraînement d'IA (FR/EN). J'aide les entreprises à réduire le bruit opérationnel et à automatiser leurs flux grâce à la méthodologie C.O.R.E.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn" data-fr="Mes Services" data-en="My Services">Mes Services</a>
+                    <a href="#projects" class="btn btn-red" data-fr="Voir mes Cas d'usage" data-en="See my Use Cases">Voir mes Cas d'usage</a>
+                    <a href="CV kamga josias.pdf" download class="btn btn-cv" id="cvDownload" data-fr="&lt;i class='fa-solid fa-file-arrow-down'&gt;&lt;/i&gt; Télécharger mon CV" data-en="&lt;i class='fa-solid fa-file-arrow-down'&gt;&lt;/i&gt; Download my CV">
+                        <i class="fa-solid fa-file-arrow-down"></i> Télécharger mon CV
+                    </a>
+                </div>
             </div>
             <div class="hero-img-wrapper">
-                <img src="profil.jpg" alt="Josias Foguieng" class="hero-img" onerror="this.src='https://via.placeholder.com/350x350/1f2833/66fcf1?text=FKJOSIAS'">
+                <img src="Profil.jpg" alt="Josias Foguieng" class="hero-img" onerror="this.src='https://via.placeholder.com/350x350/1f2833/66fcf1?text=FKJOSIAS'">
             </div>
         </div>
     </header>
@@ -649,12 +680,12 @@
             <h2 class="section-title fade-up" data-fr="À Propos" data-en="About">À Propos</h2>
             <div class="about-grid fade-up">
                 <div>
-                    <p style="margin-bottom: 1.5rem;" data-fr="Actuellement en Niveau II à l'&lt;strong&gt;Institut Universitaire de la Cote (IUC)&lt;/strong&gt;, je bâtis des fondations solides dans les réseaux et la sécurité. Mon parcours est marqué par une curiosité technique et une volonté de résoudre des problèmes concrets, comme la supervision réseau ou la gestion des identités (IAM)." data-en="Currently in Level II at the &lt;strong&gt;Institut Universitaire de la Cote (IUC)&lt;/strong&gt;, I am building solid foundations in networking and security. My journey is marked by technical curiosity and a drive to solve real-world problems, such as network monitoring or identity management (IAM).">Actuellement en Niveau II à l'<strong>Institut Universitaire de la Cote (IUC)</strong>, je bâtis des fondations solides dans les réseaux et la sécurité. Mon parcours est marqué par une curiosité technique et une volonté de résoudre des problèmes concrets, comme la supervision réseau ou la gestion des identités (IAM).</p>
-                    <p style="margin-bottom: 1.5rem;" data-fr="Bilingue (Français/Anglais), je suis capable de m'adapter rapidement aux environnements internationaux, comme démontré par mes simulations chez &lt;strong&gt;Tata Consultancy Services&lt;/strong&gt; et &lt;strong&gt;Mastercard&lt;/strong&gt;." data-en="Bilingual (French/English), I can quickly adapt to international environments, as demonstrated by my simulations at &lt;strong&gt;Tata Consultancy Services&lt;/strong&gt; and &lt;strong&gt;Mastercard&lt;/strong&gt;.">Bilingue (Français/Anglais), je suis capable de m'adapter rapidement aux environnements internationaux, comme démontré par mes simulations chez <strong>Tata Consultancy Services</strong> et <strong>Mastercard</strong>.</p>
-                    <p data-fr="&lt;strong&gt;Objectif :&lt;/strong&gt; Rejoindre une équipe dynamique pour contribuer à des projets innovants tout en développant mon expertise en gestion de systèmes." data-en="&lt;strong&gt;Goal:&lt;/strong&gt; Join a dynamic team to contribute to innovative projects while developing my expertise in systems management."><strong>Objectif :</strong> Rejoindre une équipe dynamique pour contribuer à des projets innovants tout en développant mon expertise en gestion de systèmes.</p>
+                    <p style="margin-bottom: 1.5rem;" data-fr="Actuellement en Niveau III, je prépare un Bachelor en Administration Systèmes Réseaux et Cybersécurité à l'&lt;strong&gt;Institut Universitaire de la Cote (IUC)&lt;/strong&gt;. En parallèle, je propose mes services en freelance pour aider les entreprises à structurer leur IT." data-en="Currently in Level III, I am pursuing a Bachelor's degree in Systems, Network Administration, and Cybersecurity at the &lt;strong&gt;Institut Universitaire de la Cote (IUC)&lt;/strong&gt;. At the same time, I offer my services as a freelancer to help companies structure their IT.">Actuellement en Niveau III, je prépare un Bachelor en Administration Systèmes Réseaux et Cybersécurité à l'<strong>Institut Universitaire de la Cote (IUC)</strong>. En parallèle, je propose mes services en freelance pour aider les entreprises à structurer leur IT.</p>
+                    <p style="margin-bottom: 1.5rem;" data-fr="Bilingue (Français/Anglais), je suis capable de m'adapter rapidement aux environnements internationaux. Mon approche (C.O.R.E.) consiste à &lt;strong&gt;Cibler, Orchestrer, Rationaliser et Évoluer&lt;/strong&gt; les flux d'incidents pour transformer vos centres de coût en environnements automatisés." data-en="Bilingual (French/English), I can quickly adapt to international environments. My approach (C.O.R.E.) consists of &lt;strong&gt;Categorizing, Orchestrating, Rationalizing and Evolving&lt;/strong&gt; incident flows to transform your cost centers into automated environments.">Bilingue (Français/Anglais), je suis capable de m'adapter rapidement aux environnements internationaux. Mon approche (C.O.R.E.) consiste à <strong>Cibler, Orchestrer, Rationaliser et Évoluer</strong> les flux d'incidents pour transformer vos centres de coût en environnements automatisés.</p>
+                    <p data-fr="&lt;strong&gt;Objectif :&lt;/strong&gt; Vous fournir un support technique fiable, des automatisations sans code et des données d'entraînement de qualité pour vos IA, tout en continuant mon apprentissage vers l'expertise complète en cybersécurité." data-en="&lt;strong&gt;Goal:&lt;/strong&gt; Provide you with reliable technical support, no-code automations, and high-quality training data for your AIs, while continuing my learning towards full cybersecurity expertise."><strong>Objectif :</strong> Vous fournir un support technique fiable, des automatisations sans code et des données d'entraînement de qualité pour vos IA, tout en continuant mon apprentissage vers l'expertise complète en cybersécurité.</p>
                 </div>
                 <div class="contact-card" id="contact">
-                    <h3 style="margin-bottom: 1.5rem;" data-fr="Contact" data-en="Contact">Contact</h3>
+                    <h3 style="margin-bottom: 1.5rem;" data-fr="Contact Direct" data-en="Direct Contact">Contact Direct</h3>
                     <div class="contact-item">
                         <i class="fa-solid fa-envelope"></i>
                         <a href="mailto:josiaskamga01@gmail.com">josiaskamga01@gmail.com</a>
@@ -665,54 +696,122 @@
                     </div>
                     <div class="contact-item">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span data-fr="Bonamoussadi, Douala" data-en="Bonamoussadi, Douala">Bonamoussadi, Douala</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SKILLS -->
-            <div class="skills-container fade-up">
-                <div class="skill-box">
-                    <h4 data-fr="Compétences Techniques" data-en="Technical Skills">Compétences Techniques</h4>
-                    <div class="skill-tags">
-                        <span>Réseaux</span>
-                        <span>Cybersécurité</span>
-                        <span>VMware</span>
-                        <span>VirtualBox</span>
-                        <span>Linux</span>
-                        <span>Windows Server</span>
-                        <span>Zabbix</span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <h4 data-fr="Soft Skills" data-en="Soft Skills">Soft Skills</h4>
-                    <div class="skill-tags">
-                        <span data-fr="Rigueur" data-en="Rigor">Rigueur</span>
-                        <span data-fr="Esprit d'équipe" data-en="Teamwork">Esprit d'équipe</span>
-                        <span data-fr="Adaptabilité" data-en="Adaptability">Adaptabilité</span>
-                        <span data-fr="Communication" data-en="Communication">Communication</span>
-                        <span data-fr="Gestion du stress" data-en="Stress management">Gestion du stress</span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <h4 data-fr="Langues" data-en="Languages">Langues</h4>
-                    <div class="skill-tags">
-                        <span data-fr="Français (Courant)" data-en="French (Fluent)">Français (Courant)</span>
-                        <span data-fr="Anglais (Bilingue)" data-en="English (Bilingual)">Anglais (Bilingue)</span>
+                        <span data-fr="Douala, Cameroun (International)" data-en="Douala, Cameroon (International)">Douala, Cameroun (International)</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" style="background-color: #0d0e12;">
+    <!-- SERVICES SECTION -->
+    <section id="services" style="background-color: #0d0e12;">
         <div class="container">
-            <h2 class="section-title fade-up" data-fr="Projets & Simulations" data-en="Projects & Simulations">Projets & Simulations</h2>
-            <p class="fade-up" style="text-align: center; margin-bottom: 3rem;" data-fr="Cliquez sur un projet pour voir les détails." data-en="Click on a project to see the details.">Cliquez sur un projet pour voir les détails.</p>
+            <h2 class="section-title fade-up" data-fr="Mes Services Freelance" data-en="My Freelance Services">Mes Services Freelance</h2>
+            <span class="section-subtitle fade-up" data-fr="Des solutions pragmatiques pour optimiser votre infrastructure et vos processus." data-en="Pragmatic solutions to optimize your infrastructure and processes.">Des solutions pragmatiques pour optimiser votre infrastructure et vos processus.</span>
+
+            <div class="grid-auto fade-up">
+                <!-- Service 1: NOC -->
+                <div class="card-box blue-border">
+                    <h4>
+                        <i class="fa-solid fa-network-wired" style="color: var(--accent-blue);"></i>
+                        <span data-fr="Support IT & Supervision NOC" data-en="IT Support & NOC Monitoring">Support IT & Supervision NOC</span>
+                    </h4>
+                    <p data-fr="Dépannage à distance, configuration d'équipements (Cisco, MikroTik) et déploiement d'outils de supervision (Zabbix, The Dude) pour anticiper les pannes avant qu'elles n'impactent vos équipes." data-en="Remote troubleshooting, device configuration (Cisco, MikroTik) and deployment of monitoring tools (Zabbix, The Dude) to anticipate outages before they impact your teams.">Dépannage à distance, configuration d'équipements (Cisco, MikroTik) et déploiement d'outils de supervision (Zabbix, The Dude) pour anticiper les pannes avant qu'elles n'impactent vos équipes.</p>
+                    <div class="skill-tags">
+                        <span>Cisco</span><span>MikroTik</span><span>Zabbix</span><span>Windows Server</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: No-Code -->
+                <div class="card-box red-border">
+                    <h4>
+                        <i class="fa-solid fa-robot" style="color: var(--accent-red);"></i>
+                        <span data-fr="Automatisation No-Code" data-en="No-Code Automation">Automatisation No-Code</span>
+                    </h4>
+                    <p data-fr="Création de bases de données métier, CRM et plateformes sur-mesure sans coder. Connexion de vos outils via Make/Zapier pour éliminer les saisies manuelles répétitives et fluidifier votre administration." data-en="Creation of business databases, CRMs and custom platforms without coding. Connecting your tools via Make/Zapier to eliminate repetitive manual entries and streamline your administration.">Création de bases de données métier, CRM et plateformes sur-mesure sans coder. Connexion de vos outils via Make/Zapier pour éliminer les saisies manuelles répétitives et fluidifier votre administration.</p>
+                    <div class="skill-tags">
+                        <span>Airtable</span><span>Softr</span><span>Make</span><span>Zapier</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: AI Training -->
+                <div class="card-box purple-border">
+                    <h4>
+                        <i class="fa-solid fa-brain" style="color: #9b59b6;"></i>
+                        <span data-fr="Annotation & Entraînement d'IA" data-en="AI Annotation & Training">Annotation & Entraînement d'IA</span>
+                    </h4>
+                    <p data-fr="Préparation de datasets et annotation de données (texte, requêtes) en français et en anglais pour l'entraînement de modèles d'intelligence artificielle. Certification en cours." data-en="Dataset preparation and data annotation (text, queries) in French and English for training artificial intelligence models. Certification in progress.">Préparation de datasets et annotation de données (texte, requêtes) en français et en anglais pour l'entraînement de modèles d'intelligence artificielle. Certification en cours.</p>
+                    <div class="skill-tags">
+                        <span>Data Labeling</span><span>NLP</span><span>Bilingue FR/EN</span>
+                    </div>
+                </div>
+
+                <!-- Service 4: Translation -->
+                <div class="card-box dark-border">
+                    <h4>
+                        <i class="fa-solid fa-language" style="color: var(--accent-blue-dark);"></i>
+                        <span data-fr="Traduction Technique IT (FR/EN)" data-en="IT Technical Translation (FR/EN)">Traduction Technique IT (FR/EN)</span>
+                    </h4>
+                    <p data-fr="Traduction précise de documentations réseau, rapports d'audit de sécurité et manuels utilisateurs. Certifié TOEFL, je garantis un vocabulaire technique exact pour vos environnements internationaux." data-en="Accurate translation of network documentation, security audit reports and user manuals. TOEFL certified, I guarantee exact technical vocabulary for your international environments.">Traduction précise de documentations réseau, rapports d'audit de sécurité et manuels utilisateurs. Certifié TOEFL, je garantis un vocabulaire technique exact pour vos environnements internationaux.</p>
+                    <div class="skill-tags">
+                        <span>TOEFL</span><span>Docs Techniques</span><span>Rapports</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USE CASES / PROJECTS SECTION -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title fade-up" data-fr="Cas d'Usage & Réalisations" data-en="Use Cases & Achievements">Cas d'Usage & Réalisations</h2>
+            <span class="section-subtitle fade-up" data-fr="Solutions concrètes déployées pour résoudre des problèmes d'entreprise." data-en="Concrete solutions deployed to solve business problems.">Solutions concrètes déployées pour résoudre des problèmes d'entreprise.</span>
 
             <div class="projects-grid">
 
+                <!-- Use Case 1: MikroTik -->
+                <div class="project-card fade-up" onclick="openModal('mikrotik')">
+                    <div class="project-img" style="background: linear-gradient(135deg, #1a3a4a 0%, #0d1f2d 100%);">
+                        <div style="text-align:center;">
+                            <i class="fa-solid fa-wifi" style="font-size:2.5rem; color:var(--accent-blue); margin-bottom:10px; display:block;"></i>
+                            <span>MikroTik & The Dude</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 data-fr="Portail Captif & Supervision" data-en="Captive Portal & Monitoring">Portail Captif & Supervision</h4>
+                        <p data-fr="Mission Réelle • Réseau & Sécurité" data-en="Real Mission • Network & Security">Mission Réelle • Réseau & Sécurité</p>
+                        <span class="click-hint" data-fr="[ Voir détails ]" data-en="[ See details ]">[ Voir détails ] <i class="fa-solid fa-arrow-right" style="font-size:0.65rem;"></i></span>
+                    </div>
+                </div>
+
+                <!-- Use Case 2: Zabbix -->
+                <div class="project-card fade-up" onclick="openModal('zabbix')">
+                    <div class="project-img">
+                        <img src="projet-zabbix.jpg" alt="Supervision Réseau" onerror="this.style.display='none'; this.parentElement.innerText='Supervision Réseau Zabbix'">
+                    </div>
+                    <div class="project-info">
+                        <h4 data-fr="Solution de Supervision PME" data-en="SME Monitoring Solution">Solution de Supervision PME</h4>
+                        <p data-fr="Zabbix • Anticipation des pannes" data-en="Zabbix • Outage Anticipation">Zabbix • Anticipation des pannes</p>
+                        <span class="click-hint" data-fr="[ Voir détails ]" data-en="[ See details ]">[ Voir détails ] <i class="fa-solid fa-arrow-right" style="font-size:0.65rem;"></i></span>
+                    </div>
+                </div>
+
+                <!-- Use Case 3: Airtable -->
+                <div class="project-card fade-up" onclick="openModal('airtable-softr')">
+                    <div class="project-img" style="background: linear-gradient(135deg, #1a3a4a 0%, #0d1f2d 100%);">
+                        <div style="text-align:center;">
+                            <i class="fa-solid fa-table-list" style="font-size:2.5rem; color:var(--accent-blue); margin-bottom:10px; display:block;"></i>
+                            <span>Airtable + Softr</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h4 data-fr="Automatisation Administrative" data-en="Administrative Automation">Automatisation Administrative</h4>
+                        <p data-fr="Airtable & Softr • No-Code" data-en="Airtable & Softr • No-Code">Airtable & Softr • No-Code</p>
+                        <span class="click-hint" data-fr="[ Voir détails ]" data-en="[ See details ]">[ Voir détails ] <i class="fa-solid fa-arrow-right" style="font-size:0.65rem;"></i></span>
+                    </div>
+                </div>
+
+                <!-- Use Case 4: Tata -->
                 <div class="project-card fade-up" onclick="openModal('tata')">
                     <div class="project-img">
                         <img src="projet-tata.jpg" alt="Tata Simulation" onerror="this.style.display='none'; this.parentElement.innerText='Tata Cybersecurity Simulation'">
@@ -724,70 +823,45 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-up" onclick="openModal('mastercard')">
-                    <div class="project-img">
-                        <img src="projet-mastercard.jpg" alt="Mastercard Simulation" onerror="this.style.display='none'; this.parentElement.innerText='Mastercard Security Awareness'">
-                    </div>
-                    <div class="project-info">
-                        <h4>Mastercard Security Team</h4>
-                        <p data-fr="Simulation Forage • Phishing & Awareness" data-en="Forage Simulation • Phishing & Awareness">Simulation Forage • Phishing & Awareness</p>
-                        <span class="click-hint" data-fr="[ Voir détails ]" data-en="[ See details ]">[ Voir détails ] <i class="fa-solid fa-arrow-right" style="font-size:0.65rem;"></i></span>
-                    </div>
-                </div>
-
-                <div class="project-card fade-up" onclick="openModal('zabbix')">
-                    <div class="project-img">
-                        <img src="projet-zabbix.jpg" alt="Supervision Réseau" onerror="this.style.display='none'; this.parentElement.innerText='Supervision Réseau Zabbix'">
-                    </div>
-                    <div class="project-info">
-                        <h4 data-fr="Supervision Réseau" data-en="Network Monitoring">Supervision Réseau</h4>
-                        <p data-fr="Projet Universitaire • Zabbix & Monitoring" data-en="University Project • Zabbix & Monitoring">Projet Universitaire • Zabbix & Monitoring</p>
-                        <span class="click-hint" data-fr="[ Voir détails ]" data-en="[ See details ]">[ Voir détails ] <i class="fa-solid fa-arrow-right" style="font-size:0.65rem;"></i></span>
-                    </div>
-                </div>
-
-                <div class="project-card fade-up" onclick="openModal('airtable-softr')">
-                    <div class="project-img" style="background: linear-gradient(135deg, #1a3a4a 0%, #0d1f2d 100%);">
-                        <div style="text-align:center;">
-                            <i class="fa-solid fa-table-list" style="font-size:2.5rem; color:var(--accent-blue); margin-bottom:10px; display:block;"></i>
-                            <span>Airtable + Softr</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h4 data-fr="Plateforme d'Inscriptions Événement" data-en="Event Registration Platform">Plateforme d'Inscriptions Événement</h4>
-                        <p data-fr="Airtable & Softr • No-Code" data-en="Airtable & Softr • No-Code">Airtable & Softr • No-Code</p>
-                        <span class="click-hint" data-fr="[ Voir détails ]" data-en="[ See details ]">[ Voir détails ] <i class="fa-solid fa-arrow-right" style="font-size:0.65rem;"></i></span>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
     <!-- CERTIFICATES SECTION -->
-    <section id="certificates">
+    <section id="certificates" style="background-color: #0d0e12;">
         <div class="container">
-            <h2 class="section-title fade-up" data-fr="Certificats" data-en="Certificates">Certificats</h2>
-            <div class="certs-grid">
+            <h2 class="section-title fade-up" data-fr="Certificats & Validations" data-en="Certificates & Validations">Certificats & Validations</h2>
+            <span class="section-subtitle fade-up" data-fr="Mes compétences sont validées par les standards d'entreprises internationales." data-en="My skills are validated by standards from international companies.">Mes compétences sont validées par les standards d'entreprises internationales.</span>
 
+            <div class="certs-grid">
                 <div class="cert-card fade-up">
                     <img src="Ctata.jpg" alt="Tata Cert" class="cert-img" onerror="this.src='https://via.placeholder.com/200x150/ffffff/000000?text=Certificat+Tata'">
                     <h4>Tata Cybersecurity</h4>
                     <p style="font-size: 0.8rem;" data-fr="Forage Simulation" data-en="Forage Simulation">Forage Simulation</p>
                 </div>
-
                 <div class="cert-card fade-up">
                     <img src="Cmaster.jpg" alt="Mastercard Cert" class="cert-img" onerror="this.src='https://via.placeholder.com/200x150/ffffff/000000?text=Certificat+Mastercard'">
                     <h4>Mastercard Security</h4>
                     <p style="font-size: 0.8rem;" data-fr="Forage Virtual Experience" data-en="Forage Virtual Experience">Forage Virtual Experience</p>
                 </div>
-
                 <div class="cert-card fade-up">
                     <img src="Cnocode.jpg" alt="Cnocode Cert" class="cert-img" onerror="this.src='https://via.placeholder.com/200x150/ffffff/000000?text=Certificat+Cnocode'">
                     <h4>No-Code</h4>
-                    <p style="font-size: 0.8rem;" data-fr="Contournement & Orange Digital Center" data-en="Contournement & Orange Digital Center">Contournement & Orange Digital Center </p>
+                    <p style="font-size: 0.8rem;" data-fr="Orange Digital Center" data-en="Orange Digital Center">Orange Digital Center</p>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CALL TO ACTION -->
+    <section class="cta-section">
+        <div class="container fade-up">
+            <h2 data-fr="Prêt à optimiser votre IT ?" data-en="Ready to optimize your IT?">Prêt à optimiser votre IT ?</h2>
+            <p data-fr="Discutons de votre projet et obtenez un devis sur mesure. La première consultation est gratuite." data-en="Let's discuss your project and get a custom quote. The first consultation is free.">Discutons de votre projet et obtenez un devis sur mesure. La première consultation est gratuite.</p>
+            <div class="hero-btns" style="justify-content: center;">
+                <a href="mailto:josiaskamga01@gmail.com" class="btn" data-fr="Demander un devis gratuit" data-en="Request a free quote">Demander un devis gratuit</a>
+                <a href="https://www.linkedin.com/in/josiaskamga/" target="_blank" class="btn btn-red" data-fr="Voir mon LinkedIn" data-en="See my LinkedIn">Voir mon LinkedIn</a>
+                <a href="https://github.com/Josias-Kamga" target="_blank" class="btn btn-cv" data-fr="Voir mon GitHub" data-en="See my GitHub">Voir mon GitHub</a>
             </div>
         </div>
     </section>
@@ -806,11 +880,77 @@
     </div>
 
     <script>
-        // ========== PROJECT DATA (BILINGUAL) ==========
         const projectsData = {
+            mikrotik: {
+                title: { fr: "Portail Captif & Supervision Réseau (MikroTik)", en: "Captive Portal & Network Monitoring (MikroTik)" },
+                date: { fr: "Mission Professionnelle", en: "Professional Mission" },
+                desc: {
+                    fr: "Déploiement d'un portail captif (Hotspot) sur un routeur MikroTik pour une PME, combiné à une supervision réseau en temps réel avec The Dude. Objectif : sécuriser le Wi-Fi invité, contrôler la bande passante et tracer les connexions.",
+                    en: "Deployment of a captive portal (Hotspot) on a MikroTik router for an SME, combined with real-time network monitoring using The Dude. Goal: secure guest Wi-Fi, control bandwidth and trace connections."
+                },
+                points: {
+                    fr: [
+                        "Configuration de routeurs MikroTik (Hotspot, Firewall, NAT, DHCP).",
+                        "Mise en place d'un serveur RADIUS (User Manager) avec génération de vouchers QR Code.",
+                        "Déploiement de The Dude pour cartographier le réseau et alerter en cas de panne.",
+                        "Création d'une page de connexion personnalisée (HTML/CSS/JS)."
+                    ],
+                    en: [
+                        "Configuration of MikroTik routers (Hotspot, Firewall, NAT, DHCP).",
+                        "Setup of a RADIUS server (User Manager) with QR Code voucher generation.",
+                        "Deployment of The Dude to map the network and alert on outages.",
+                        "Creation of a custom login page (HTML/CSS/JS)."
+                    ]
+                },
+                github: "https://github.com/Josias-Kamga/Mikrotik-Captive-Portal-Monitoring"
+            },
+            zabbix: {
+                title: { fr: "Solution de Supervision Réseau pour PME", en: "Network Monitoring Solution for SMEs" },
+                date: { fr: "Cas d'usage Professionnel", en: "Professional Use Case" },
+                desc: {
+                    fr: "Déploiement complet d'un système de monitoring Zabbix. Pour une PME, l'enjeu est de détecter une panne de serveur ou de réseau avant que les employés ne s'en plaignent, garantissant ainsi une continuité de service.",
+                    en: "Full deployment of a Zabbix monitoring system. For an SME, the challenge is to detect a server or network outage before employees complain, ensuring business continuity."
+                },
+                points: {
+                    fr: [
+                        "Installation et configuration du serveur Zabbix et des agents.",
+                        "Mise en place d'alertes proactives pour la disponibilité des services.",
+                        "Création de tableaux de bord visuels pour le management.",
+                        "Résolution proactive des pannes simulées."
+                    ],
+                    en: [
+                        "Installation and configuration of Zabbix server and agents.",
+                        "Proactive alert setup for service availability.",
+                        "Creation of visual dashboards for management.",
+                        "Proactive resolution of simulated outages."
+                    ]
+                }
+            },
+            "airtable-softr": {
+                title: { fr: "Automatisation Administrative — Airtable + Softr", en: "Administrative Automation — Airtable + Softr" },
+                date: { fr: "Cas d'usage No-Code", en: "No-Code Use Case" },
+                desc: {
+                    fr: "Création d'une plateforme d'inscription et de suivi automatisée. Cette solution élimine les saisies manuelles répétitives pour les administratifs, centralise les données en temps réel et envoie des confirmations automatiques.",
+                    en: "Creation of an automated registration and tracking platform. This solution eliminates repetitive manual data entry for administrative staff, centralizes data in real-time, and sends automatic confirmations."
+                },
+                points: {
+                    fr: [
+                        "Conception d'un formulaire structuré dans Airtable.",
+                        "Automatisation de la centralisation des données.",
+                        "Création d'un tableau de bord en temps réel avec Softr.",
+                        "Mise en place d'envois automatiques d'emails de confirmation."
+                    ],
+                    en: [
+                        "Design of a structured form in Airtable.",
+                        "Automation of data centralization.",
+                        "Creation of a real-time dashboard with Softr.",
+                        "Setup of automatic confirmation emails."
+                    ]
+                }
+            },
             tata: {
-                title: { fr: "Tata Cybersecurity - Security Analyst Simulation", en: "Tata Cybersecurity - Security Analyst Simulation" },
-                date: { fr: "Avril 29, 2026", en: "April 29, 2026" },
+                title: { fr: "Tata Cybersecurity - Analyst Simulation", en: "Tata Cybersecurity - Analyst Simulation" },
+                date: { fr: "Avril 2026", en: "April 2026" },
                 desc: {
                     fr: "Collaboration avec l'équipe de consulting en cybersécurité de Tata Consultancy Services.",
                     en: "Collaboration with the cybersecurity consulting team at Tata Consultancy Services."
@@ -818,102 +958,24 @@
                 points: {
                     fr: [
                         "Acquis une expertise approfondie en Identity and Access Management (IAM).",
-                        "Alignement stratégique des meilleures pratiques de cybersécurité avec les objectifs commerciaux.",
-                        "Rédaction de documentation complète et présentation des concepts techniques complexes.",
-                        "Analyse des risques liés aux identités numériques."
+                        "Alignement stratégique des pratiques de sécurité avec les objectifs commerciaux.",
+                        "Rédaction de documentation technique complexe."
                     ],
                     en: [
                         "Gained deep expertise in Identity and Access Management (IAM).",
-                        "Strategic alignment of cybersecurity best practices with business objectives.",
-                        "Writing comprehensive documentation and presenting complex technical concepts.",
-                        "Risk analysis related to digital identities."
-                    ]
-                }
-            },
-            mastercard: {
-                title: { fr: "Mastercard - Security Awareness Team", en: "Mastercard - Security Awareness Team" },
-                date: { fr: "Novembre 16, 2025", en: "November 16, 2025" },
-                desc: {
-                    fr: "Rôle d'analyste au sein de l'équipe de sensibilisation à la sécurité de Mastercard.",
-                    en: "Analyst role within Mastercard's security awareness team."
-                },
-                points: {
-                    fr: [
-                        "Identification et signalement des menaces de sécurité, notamment le phishing.",
-                        "Analyse des lacunes en matière de formation pour les différentes équipes métier.",
-                        "Mise en œuvre de cours et de procédures de formation renforcés.",
-                        "Contribution à une culture de sécurité proactive."
-                    ],
-                    en: [
-                        "Identification and reporting of security threats, particularly phishing.",
-                        "Analysis of training gaps across different business teams.",
-                        "Implementation of enhanced training courses and procedures.",
-                        "Contribution to a proactive security culture."
-                    ]
-                }
-            },
-            zabbix: {
-                title: { fr: "Supervision Réseau avec Zabbix", en: "Network Monitoring with Zabbix" },
-                date: { fr: "Projet Universitaire", en: "University Project" },
-                desc: {
-                    fr: "Déploiement complet d'un système de monitoring sur un environnement simulé.",
-                    en: "Full deployment of a monitoring system on a simulated environment."
-                },
-                points: {
-                    fr: [
-                        "Installation et configuration du serveur Zabbix et des agents.",
-                        "Mise en place d'alertes pour la disponibilité des services réseau.",
-                        "Création de tableaux de bord (Dashboards) pour visualiser la performance.",
-                        "Simulation de pannes et vérification de la réactivité des alertes."
-                    ],
-                    en: [
-                        "Installation and configuration of Zabbix server and agents.",
-                        "Setting up alerts for network service availability.",
-                        "Creating dashboards to visualize performance.",
-                        "Simulating failures and verifying alert responsiveness."
-                    ]
-                }
-            },
-            "airtable-softr": {
-                title: { fr: "Plateforme de Gestion des Inscriptions — Airtable + Softr", en: "Registration Management Platform — Airtable + Softr" },
-                date: { fr: "Projet No-Code", en: "No-Code Project" },
-                desc: {
-                    fr: "Mise en place d'une plateforme de gestion des inscriptions à un événement, réalisée avec Airtable + Softr. Les participants s'inscrivent via un formulaire, les données sont centralisées automatiquement, et l'organisateur dispose d'un tableau de bord en temps réel pour suivre les inscriptions et envoyer des confirmations.",
-                    en: "Development of an event registration management platform built with Airtable + Softr. Participants register via a form, data is automatically centralized, and the organizer has a real-time dashboard to track registrations and send confirmations."
-                },
-                points: {
-                    fr: [
-                        "Conception d'un formulaire d'inscription structuré dans Airtable.",
-                        "Automatisation de la centralisation des données des participants.",
-                        "Création d'un tableau de bord en temps réel avec Softr pour le suivi des inscriptions.",
-                        "Mise en place d'envois automatiques de confirmations aux participants.",
-                        "Approche 100% No-Code : rapide, flexible et sans écriture de code."
-                    ],
-                    en: [
-                        "Design of a structured registration form in Airtable.",
-                        "Automation of participant data centralization.",
-                        "Creation of a real-time dashboard with Softr for registration tracking.",
-                        "Setup of automatic confirmation emails to participants.",
-                        "100% No-Code approach: fast, flexible, and code-free."
+                        "Strategic alignment of security practices with business objectives.",
+                        "Writing complex technical documentation."
                     ]
                 }
             }
         };
 
-        // ========== LANGUAGE SYSTEM ==========
         let currentLang = 'fr';
-
-        // Noms des fichiers CV selon la langue
-        const cvFiles = {
-            fr: 'CV kamga josias.pdf',
-            en: 'CV josias kamga.pdf'
-        };
+        const cvFiles = { fr: 'CV kamga josias.pdf', en: 'CV josias kamga.pdf' };
 
         function setLanguage(lang) {
             currentLang = lang;
             document.documentElement.lang = lang;
-
-            // Update all elements with data-fr / data-en
             document.querySelectorAll('[data-fr][data-en]').forEach(el => {
                 const text = el.getAttribute('data-' + lang);
                 if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
@@ -922,21 +984,12 @@
                     el.innerHTML = text;
                 }
             });
-
-            // Update lang button label
             document.getElementById('langLabel').textContent = lang === 'fr' ? 'EN' : 'FR';
-
-            // Update page title
-            document.title = 'Josias Foguieng | Cybersecurity Analyst';
-
-            // Mise à jour du lien de téléchargement du CV selon la langue
             const cvLink = document.getElementById('cvDownload');
             if (cvLink) {
                 cvLink.href = cvFiles[lang];
                 cvLink.setAttribute('download', cvFiles[lang]);
             }
-
-            // If modal is open, re-render it
             if (modal.classList.contains('active') && currentModalKey) {
                 renderModal(currentModalKey);
             }
@@ -946,7 +999,6 @@
             setLanguage(currentLang === 'fr' ? 'en' : 'fr');
         });
 
-        // ========== MODAL SYSTEM ==========
         const modal = document.getElementById('projectModal');
         const modalBody = document.getElementById('modalBody');
         let currentModalKey = null;
@@ -954,11 +1006,16 @@
         function renderModal(key) {
             const data = projectsData[key];
             if (!data) return;
-
             const title = data.title[currentLang];
             const date = data.date[currentLang];
             const desc = data.desc[currentLang];
             const points = data.points[currentLang];
+            
+            const githubLink = data.github ? `
+                <a href="${data.github}" target="_blank" class="btn" style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 8px;">
+                    <i class="fa-brands fa-github"></i> Voir le dépôt GitHub
+                </a>
+            ` : '';
 
             modalBody.innerHTML = `
                 <h2>${title}</h2>
@@ -967,6 +1024,7 @@
                 <ul>
                     ${points.map(p => `<li>${p}</li>`).join('')}
                 </ul>
+                ${githubLink}
             `;
         }
 
@@ -991,13 +1049,11 @@
             if (e.key === 'Escape') closeModal();
         });
 
-        // ========== NAV SCROLL EFFECT ==========
         const nav = document.getElementById('mainNav');
         window.addEventListener('scroll', () => {
             nav.classList.toggle('scrolled', window.scrollY > 50);
         }, { passive: true });
 
-        // ========== SCROLL REVEAL ANIMATIONS ==========
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1009,8 +1065,6 @@
 
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-        // ========== INITIALISATION DU CV ==========
-        // Initialise le bon fichier CV au chargement de la page
         const cvLinkInit = document.getElementById('cvDownload');
         if (cvLinkInit) {
             cvLinkInit.href = cvFiles[currentLang];
@@ -1018,4 +1072,4 @@
         }
     </script>
 </body>
-</html>
+</html>>
